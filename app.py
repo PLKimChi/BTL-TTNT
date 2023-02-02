@@ -48,9 +48,9 @@ sign_names = {
         41: 'End of no passing',
         42: 'End of no passing by vehicles over 3.5 metric tons'}
 
-st.title("Traffic Sign Classifier")
+st.title("Nhận dạng biển báo giao thông")
 
-uploaded_file = st.file_uploader("Choose an image...", type="png")
+uploaded_file = st.file_uploader("Chọn file JPG, JPEG hoặc PNG", type=["jpg","jpeg","png"])
 if uploaded_file is not None:
 
         image = Image.open(uploaded_file)
